@@ -1,10 +1,5 @@
 import sqlite3
 
-connection = sqlite3.connect('practice.db')
-
-crsr = connection.cursor()
-
-
 def execute(query, *args, fetchall=False):
     connection = sqlite3.connect('practice.db')
     cursor = connection.cursor()
